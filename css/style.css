@@ -1,0 +1,75 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;/*border: 1px solid red;*/
+}
+section{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+section .controls{
+	width: 800px;
+	height: 30px;
+}
+section .controls div{
+	display: inline-block;
+}
+section .controls #tools div{
+	width: 30px;
+	height: 30px;
+	background: hsla(280deg,50%,50%,1);
+	color: hsla(0deg,50%,100%,1);
+	line-height: 28px;
+	padding-left: 8px;
+	cursor: pointer;
+	user-select: none;
+}
+section .controls #tools .bold{
+	font-weight: 900;
+}
+section .controls #tools .bold.dark{
+	background: hsla(280deg,50%,30%,1);
+}
+section .controls #tools .italic{
+	font-style: italic;
+}
+section .controls #tools .italic.dark{
+	background: hsla(280deg,50%,30%,1);
+}
+section .controls #tools .underline{
+	text-decoration: underline;
+}
+section .controls #tools .underline.dark{
+	background: hsla(280deg,50%,30%,1);
+}
+section .controls #font-size{
+	float: right;
+	height: 30px;
+}
+section .controls #font-size label{
+	font-size: 25px;
+}
+section .controls #font-size input{
+	height: 30px;
+	width: 55px;
+	color: #fff;
+	background: hsla(280deg,50%,50%,1);
+	border: none;
+	outline: none;
+	font-size: 22px;
+}
+#edit textarea{
+	padding: 20px;
+	width: 800px;
+	height: 600px;
+	resize: none;
+	border: 1px solid hsla(280deg,50%,50%,1);
+	font-family: arial;
+	font-size: 30px;
+	font-weight: normal;
+	outline: none;
+}
